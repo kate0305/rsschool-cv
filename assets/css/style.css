@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body { height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; 
+  background-color: #E5E5E5;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-right: 60px;
+  font-family: 'Roboto', sans-serif;
+  border-left: 50px solid #F1BB1A;
+}
+
+.full-name {
+  padding: 12px 21px 15px;
+  border: 2px solid #333;
+} 
+
+.subtitle {
+  width: 150px;
+  margin-top: -7px;
+  margin-left: 25%;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: .15em;
+  color: #333;
+  background-color: #E5E5E5
+} 
+
+.myfoto { padding: 0 210px 20px 80px; }
+
+img { border-radius: 50%; }
+
+.content { flex: 1 0 auto; }
+
+.content__wrapper {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper-left {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding-right: 30px;
+}
+
+.wrapper-right {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.section { padding: 20px; }
+
+.section-name {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #242732;
+}
+
+.contacts {
+  padding-left: 10px;
+  border-left: 50px solid #F1BB1A;
+  margin-left: -50px;
+}
+
+.contacts-list { list-style: none; }
+
+.contacts-list a {
+  display: inline-block;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: .05em;
+  color: #333;
+  
+}
+
+.email::before {
+  position: relative;
+  top: 5px;
+  right: 45px;
+  display: inline-block;
+  padding: 3px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/email.svg");
+  background-position: bottom;
+  content: "";
+}
+
+.git::before {
+  position: relative;
+  top: 5px;
+  right: 45px;
+  display: inline-block;
+  padding: 3px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-git.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.telegram::before {
+  position: relative;
+  top: 3px;
+  right: 45px;
+  display: inline-block;
+  padding: 3px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.skills-list {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: .05em;
+  color: #333;
+  list-style: none;
+  padding-left: 8px;
+}
+
+.skills-list li::before {
+  position: relative;
+  top: 1px;
+  right: 8px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+}
+
+.english-level {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.english-description {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.summary-description {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: justify;
+  letter-spacing: .03em;
+  color: #4F4F4F;
+}
+
+.summary-description ul {
+  padding-left: 10px;
+  list-style: inside;
+}
+
+pre {
+  width: 400px;
+  background-color: #fff;
+}
+
+code { font-size: 17px; }
+
+.keyword { color: #07a; }
+
+.punctuation { color: #999; }
+
+.operator { color: #a67f59; }
+
+.education-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: .05em;
+  color: #333;
+  list-style: circle inside;
+  padding-left: 2px;
+}
+
+.education-list span {
+  font-style: italic;
+  color: #999;
+  font-size: 15px;
+}
+
+.footer {
+  flex: 0 0 auto;
+  background-color: #EFB815;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+  list-style: none;
+}
+
+.footer-information a { color: #333; }
+
+.logo {
+  width: 50px;
+  height: 20px;
+  background-image: url("../img/rs_school_js.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
