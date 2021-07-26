@@ -99,7 +99,7 @@ img { border-radius: 50%; }
   
 }
 
-.email::before {
+.contacts-list a::before {
   position: relative;
   top: 5px;
   right: 45px;
@@ -107,38 +107,15 @@ img { border-radius: 50%; }
   padding: 3px;
   width: 19px;
   height: 19px;
-  background-image: url("../img/email.svg");
-  background-position: bottom;
   content: "";
-}
-
-.git::before {
-  position: relative;
-  top: 5px;
-  right: 45px;
-  display: inline-block;
-  padding: 3px;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icon-git.svg");
   background-position: center;
   background-repeat: no-repeat;
-  content: "";
 }
+.email::before { background-image: url("../img/email.svg"); }
 
-.telegram::before {
-  position: relative;
-  top: 3px;
-  right: 45px;
-  display: inline-block;
-  padding: 3px;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icon-telegram.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-}
+.git::before { background-image: url("../img/icon-git.svg"); }
+
+.telegram::before { background-image: url("../img/icon-telegram.svg"); }
 
 .skills-list {
   font-style: italic;
@@ -176,6 +153,31 @@ img { border-radius: 50%; }
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
+}
+
+.hobbies-list { 
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+}
+
+.hobbies-list li {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.puzzle {
+  background-image: url("../img/puzzle.svg");
+}
+.reading {
+  background-image: url("../img/reading.svg");
+}
+.geo {
+  background-image: url("../img/geography.svg");
 }
 
 .summary-description {
@@ -231,8 +233,8 @@ code { font-size: 17px; }
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-style: bold;
   font-weight: 700;
   font-size: 15px;
@@ -241,13 +243,22 @@ code { font-size: 17px; }
   list-style: none;
 }
 
-.footer-information a { color: #333; }
+.footer-information a { 
+  display: block;
+  height: 30px;
+  color: #333; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .logo {
   width: 50px;
-  height: 20px;
   background-image: url("../img/rs_school_js.svg");
-  background-repeat: no-repeat;
+}
+
+.git-footer {
+  width: 30px;
+  background-image: url("../img/icon-git.svg");
 }
 
 
