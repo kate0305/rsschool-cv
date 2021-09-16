@@ -64,7 +64,7 @@ body {
 
 .myfoto { padding: 0; }
 
-img { border-radius: 50%; }
+//img { border-radius: 50%; }
 
 .content { flex: 1 0 auto; }
 
@@ -222,6 +222,12 @@ code { font-size: 17px; }
 .punctuation { color: #999; }
 
 .operator { color: #a67f59; }
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
 
 .education-list {
   font-style: normal;
