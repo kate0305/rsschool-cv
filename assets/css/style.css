@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html { scroll-behavior: smooth; }
 
 html,
 body { height: 100%; }
@@ -21,11 +22,26 @@ body {
 
 .header__wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 50px;
-  padding-right: 60px;
+  //padding-top: 50px;
+  //padding-right: 60px;
   font-family: 'Roboto', sans-serif;
-  border-left: 50px solid #F1BB1A;
+  
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+}
+
+.navigation__link {
+  color: #333;
 }
 
 .full-name {
@@ -46,7 +62,7 @@ body {
   background-color: #E5E5E5
 } 
 
-.myfoto { padding: 0 210px 20px 80px; }
+.myfoto { padding: 0; }
 
 img { border-radius: 50%; }
 
@@ -82,7 +98,6 @@ img { border-radius: 50%; }
 
 .contacts {
   padding-left: 10px;
-  border-left: 50px solid #F1BB1A;
   margin-left: -50px;
 }
 
