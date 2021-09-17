@@ -212,16 +212,9 @@ body {
 
 pre {
   width: 400px;
-  background-color: #fff;
 }
 
 code { font-size: 17px; }
-
-.keyword { color: #07a; }
-
-.punctuation { color: #999; }
-
-.operator { color: #a67f59; }
 
 .projects-list {
   display: flex;
