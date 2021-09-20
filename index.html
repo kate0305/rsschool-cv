@@ -11,70 +11,40 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/github.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
+        <nav class="header-navigation">
+          <ul class="navigation">
+            <li><a href="#contacts" class="navigation__link">contacts</a></li>
+            <li><a href="#summary" class="navigation__link">summary</a></li>
+            <li><a href="#skills" class="navigation__link">skills</a></li>
+            <li><a href="#education" class="navigation__link">education</a></li>
+            <li><a href="#projects" class="navigation__link">projects</a></li>
+            <li><a href="#code" class="navigation__link">code example</a></li>
+            <li><a href="#english" class="navigation__link">english</a></li>
+            <li><a href="#hobbies" class="navigation__link">hobbies</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-navigation">
-        <ul class="navigation">
-          <li><a href="#contacts" class="navigation__link">Contacts</a></li>
-          <li><a href="#summary" class="navigation__link">Summary</a></li>
-          <li><a href="#skills" class="navigation__link">Skills</a></li>
-          <li><a href="#education" class="navigation__link">Education</a></li>
-          <li><a href="#projects" class="navigation__link">Projects</a></li>
-          <li><a href="#code" class="navigation__link">Code example</a></li>
-          <li><a href="#english" class="navigation__link">English</a></li>
-          <li><a href="#hobbies" class="navigation__link">Hobbies</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main class="content">
       <div class="wrapper content__wrapper">
-        <div class="wrapper-left">
-          <figure class="myfoto">
-            <img src="./assets/img/myfoto.jpg" alt="foto" width="170" height="170">
-          </figure>
+        <aside class="wrapper-left">
           <div class="title">
             <h1 class="full-name">Katsiaryna Voronich</h1>
-            <p class="subtitle">Frontend developer</p>
-          </div>
-          <div class="section contacts" id="contacts">
-            <ul class="contacts-list">
-              <li><a  class="email" href="mailto:katharine.voronich@gmail.com" target="_blank">katharine.voronich@gmail.com</a></li>
-              <li><a class="git" href="http://github.com/kate0305" target="_blank">kate0305</a></li>
-              <li><a class="telegram" href="http://t.me/kate_403" target="_blank">@kate_403</a></li>
-            </ul>
-          </div>
-            <div class="section">
-              <h2 class="section-name" id="skills">Skills:</h2>
-              <ul class="skills-list">
-                <li>Computer Sciense Basics</li>
-                <li>Git</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="section">
-              <h2 class="section-name" id="english">English:</h2>
-              <p class="english-level">A1</p>
-              <p class="english-description">At the moment I am learning the language on my own.</p>
-            </div>
-            <div class="section">
-              <h2 class="section-name" id="hobbies">Hobbies:</h2>
-              <ul class="hobbies-list">
-                <li class="puzzle"></li>
-                <li class="reading"></li>
-                <li class="geo"></li>
-              </ul>
-            </div>
-        </div>
-        <div class="wrapper-right">
-          <div class="section">
-            <h2 class="section-name" id="summary">Summary:</h2>
+            <p class="subtitle">Frontend Developer</p>
+          </div>  
+          <figure class="myfoto">
+            <img src="./assets/img/myfoto.jpg" alt="foto">
+          </figure>
+         
+          <section class="section">
             <div class="summary-description">
               <p>After graduating from the university, I worked in the field of education, for the last 5 years as a geography teacher in a gymnasium.</p>
               <p>Thanks to my teaching experience, I can:</p>
@@ -89,68 +59,112 @@
               </ul>
               <p>My goals for the near future: deepen my knowledge of JS and learn how to apply it in practice, learn React.</p>
             </div>
-          </div>
-          <div class="section">
-            <h2 class="section-name" id="code">Code example:</h2>
-            <pre>
-              <code>
-function solution(number){
-  if (number < 1) return 0;
-  let sum = 0;
-  for (let n = 1; n < number; n++) {
-    if (!(n % 3) || !(n % 5)) {
-      sum += n;
-    }
-  }
-  return sum;
-}
-              </code>
-            </pre>
-          </div>
+          </section>
 
-          <div class="section">
-            <h2 class="section-name" id="projects">Projects:</h2>
-            <ul class="projects-list">
-              <li>
-                <p class="projects-title">Calculator</p>
-                <a href="http://kate0305.github.io/rsschool-cv-1/" target="_blank">
-                  <img src="./assets/img/calculator.png" alt="calculator" width="200"></a>
-                <p class="projects-discription">Calculator that performs mathematical operations</p>
-              </li>
-              <li>
-                <p class="projects-title">JS Clock</p>
-                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/js-clock/" target="_blank">
-                  <img src="./assets/img/photofilter.png" alt="clock" width="200"></a>
-                <p class="projects-discription">Mechanical watch with moving hands in JavaScript</p>
-              </li>
-              <li>
-                <p class="projects-title">Photofilter</p>
-                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/photofilter/" target="_blank">
-                  <img src="./assets/img/photofilter.png" alt="clock" width="200"></a>
-                <p class="projects-discription">Photo editor that allows you to edit an image by applying various properties and filters to them</p>
-              </li>
-              <li>
-                <p class="projects-title">Museum</p>
-                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/museum/" target="_blank">
-                  <img src="./assets/img/photofilter.png" alt="clock" width="200"></a>
-                <p class="projects-discription">Louvre landing page</p>
-              </li>    
+          <section class="section" id="contacts">
+            <h2 class="section-name contacts">Contacts</h2>
+            <ul class="contacts-list">
+              <li><a  class="email" href="mailto:katarinka403@gmail.com" target="_blank">katarinka403@gmail.com</a></li>
+              <li><a class="git" href="http://github.com/kate0305" target="_blank">kate0305</a></li>
+              <li><a class="telegram" href="http://t.me/kate_403" target="_blank">@kate_403</a></li>
             </ul>
-          </div>
+          </section>
+            <section class="section" id="skills">
+              <h2 class="section-name skills">Skills</h2>
+              <ul class="skills-list">
+                <li>Computer Sciense Basics</li>
+                <li>Git</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+              </ul>
+            </section>
+            <section class="section" id="english">
+              <h2 class="section-name english">English</h2>
+              <p class="english-level">A1</p>
+              <p class="english-description">At the moment I am learning the language on my own.</p>
+            </section>
+            <section class="section" id="hobbies">
+              <h2 class="section-name hobbies">Hobbies</h2>
+              <ul class="hobbies-list">
+                <li class="puzzle"></li>
+                <li class="reading"></li>
+                <li class="geo"></li>
+              </ul>
+            </section>
+        </aside>
+        <div class="wrapper-right">
+          
+          <section class="section" id="code">
+            <h2 class="section-name code" >Code example</h2>
+            <pre><code>
+function convertHashToArray(hash){
+  let matrix = [];
+  for (let key in hash) {
+    matrix.push([key, hash[key]])
+  }
+  return matrix.sort();
+}
+            </code></pre>
+          </section>
 
-          <div class="section">
-            <h2 class="section-name" id="education">Education:</h2>
+          <section class="section" id="projects">
+            <h2 class="section-name projects">Projects</h2>
+            
+              <div class="projects-item">
+                <div>
+                  <h3 class="projects-title">Calculator</h3>
+                  <p class="projects-discription">Calculator that performs mathematical operations</p>
+                  <p class="projects-technologies">Technologies used: <span>HTML, CSS, JS</span></p>
+                </div>
+                <a href="http://kate0305.github.io/rsschool-cv-1/" target="_blank">
+                  <img class="projects-img" src="./assets/img/calculator.png" alt="calculator"></a>
+              </div>
+              <div class="projects-item">
+                <div>
+                  <h3 class="projects-title">JS Clock</h3>
+                  <p class="projects-discription">Mechanical watch with moving hands in JavaScript</p>
+                  <p class="projects-technologies">Technologies used: <span>HTML, CSS, JS</span></p>
+                </div>
+                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/js-clock/" target="_blank">
+                  <img class="projects-img" src="./assets/img/clock.png" alt="clock"></a>
+              </div>
+              <div class="projects-item">
+                <div>
+                  <h3 class="projects-title">Photofilter</h3>
+                  <p class="projects-discription">Photo editor that allows you to edit an image by applying various properties and filters to them</p>
+                  <p class="projects-technologies">Technologies used: <span>HTML, CSS, JS</span></p>
+                </div>
+                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/photofilter/" target="_blank">
+                  <img class="projects-img" src="./assets/img/photofilter.png" alt="clock"></a>
+              </div>
+              <div class="projects-item">
+                <div>
+                  <h3 class="projects-title">Museum</h3>
+                  <p class="projects-discription">Louvre landing page</p>
+                  <p class="projects-technologies">Technologies used: <span>HTML, CSS</span></p>
+                </div>
+                <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/museum/" target="_blank">
+                  <img class="projects-img" src="./assets/img/museum.png" alt="clock"></a>
+              </div>    
+            
+          </section>
+
+          <section class="section" id="education">
+            <h2 class="section-name education">Education</h2>
             <ul class="education-list">
               <li>Belarusian State Pedagogical University<span>(2007 - 2012)</span></li>
               <li>EPAM UpSkillLab <span>(october 2020 - february 2021)</span></li>
+              <li>EPAM JS/FE Pre-School<span>(july 2021 - august 2021)</span></li>
               <li>GloAcademy intensives</li>
             </ul>
-          </div>
+          </section>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="wrapper">
+      <div class="wrapper footer__wrapper">
         <ul class="footer-information">
           <li><a class="logo" href="https://rs.school/js/" target="_blank"></a></li>
           <li><a class="git-footer" href="http://github.com/kate0305" target="_blank"></a></li>
