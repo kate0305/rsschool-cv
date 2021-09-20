@@ -18,10 +18,12 @@
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
+        <div class="menu-icon">
+          <span></span>
+        </div>
         <nav class="header-navigation">
           <ul class="navigation">
             <li><a href="#contacts" class="navigation__link">contacts</a></li>
-            <li><a href="#summary" class="navigation__link">summary</a></li>
             <li><a href="#skills" class="navigation__link">skills</a></li>
             <li><a href="#education" class="navigation__link">education</a></li>
             <li><a href="#projects" class="navigation__link">projects</a></li>
@@ -44,7 +46,7 @@
             <img src="./assets/img/myfoto.jpg" alt="foto">
           </figure>
          
-          <section class="section">
+          <div class="section">
             <div class="summary-description">
               <p>After graduating from the university, I worked in the field of education, for the last 5 years as a geography teacher in a gymnasium.</p>
               <p>Thanks to my teaching experience, I can:</p>
@@ -59,7 +61,7 @@
               </ul>
               <p>My goals for the near future: deepen my knowledge of JS and learn how to apply it in practice, learn React.</p>
             </div>
-          </section>
+          </div>
 
           <section class="section" id="contacts">
             <h2 class="section-name contacts">Contacts</h2>
@@ -69,33 +71,32 @@
               <li><a class="telegram" href="http://t.me/kate_403" target="_blank">@kate_403</a></li>
             </ul>
           </section>
-            <section class="section" id="skills">
-              <h2 class="section-name skills">Skills</h2>
-              <ul class="skills-list">
-                <li>Computer Sciense Basics</li>
-                <li>Git</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>JavaScript</li>
-              </ul>
-            </section>
-            <section class="section" id="english">
-              <h2 class="section-name english">English</h2>
-              <p class="english-level">A1</p>
-              <p class="english-description">At the moment I am learning the language on my own.</p>
-            </section>
-            <section class="section" id="hobbies">
-              <h2 class="section-name hobbies">Hobbies</h2>
-              <ul class="hobbies-list">
-                <li class="puzzle"></li>
-                <li class="reading"></li>
-                <li class="geo"></li>
-              </ul>
-            </section>
+          <section class="section" id="skills">
+            <h2 class="section-name skills">Skills</h2>
+            <ul class="skills-list">
+              <li>Computer Sciense Basics</li>
+              <li>Git</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Sass</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+          <section class="section" id="english">
+            <h2 class="section-name english">English</h2>
+            <p class="english-level">A1</p>
+            <p class="english-description">At the moment I am learning the language on my own.</p>
+          </section>
+          <section class="section" id="hobbies">
+            <h2 class="section-name hobbies">Hobbies</h2>
+            <ul class="hobbies-list">
+              <li class="puzzle"></li>
+              <li class="reading"></li>
+              <li class="geo"></li>
+            </ul>
+          </section>
         </aside>
         <div class="wrapper-right">
-          
           <section class="section" id="code">
             <h2 class="section-name code" >Code example</h2>
             <pre><code>
@@ -111,7 +112,6 @@ function convertHashToArray(hash){
 
           <section class="section" id="projects">
             <h2 class="section-name projects">Projects</h2>
-            
               <div class="projects-item">
                 <div>
                   <h3 class="projects-title">Calculator</h3>
@@ -148,7 +148,6 @@ function convertHashToArray(hash){
                 <a href="http://rolling-scopes-school.github.io/kate0305-JSFEPRESCHOOL/museum/" target="_blank">
                   <img class="projects-img" src="./assets/img/museum.png" alt="clock"></a>
               </div>    
-            
           </section>
 
           <section class="section" id="education">
@@ -163,6 +162,7 @@ function convertHashToArray(hash){
         </div>
       </div>
     </main>
+    
     <footer class="footer">
       <div class="wrapper footer__wrapper">
         <ul class="footer-information">
@@ -172,5 +172,7 @@ function convertHashToArray(hash){
         </ul>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
