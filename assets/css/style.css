@@ -187,6 +187,7 @@ body.lock {
   content: "";
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .email::before { background-image: url("../img/email.svg"); }
@@ -194,6 +195,8 @@ body.lock {
 .git::before { background-image: url("../img/icon-git.svg"); }
 
 .telegram::before { background-image: url("../img/telegram-icon.svg"); }
+
+.linkedin::before { background-image: url("../img/linkedin.svg"); }
 
 .skills-list {
   font-weight: 500;
@@ -256,22 +259,21 @@ body.lock {
 .summary-description {
   font-style: italic;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   text-align: justify;
   letter-spacing: 0.3px;
 }
 
+.summary-description p {
+  margin-bottom: 10px;
+}
+
 .summary-description ul {
+  margin-bottom: 10px;
   padding-left: 10px;
   list-style: inside;
 }
-
-pre {
-  width: 400px;
-}
-
-code { font-size: 17px; }
 
 .projects-item {
   display: flex;
